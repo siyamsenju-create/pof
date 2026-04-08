@@ -186,3 +186,35 @@ gsap.to('.about-image img', {
     scrub: true
   }
 });
+
+// Core Values Reveal 
+gsap.fromTo('.value-card',
+  { y: 50, opacity: 0 },
+  {
+    y: 0,
+    opacity: 1,
+    duration: 0.8,
+    stagger: 0.2,
+    ease: 'power2.out',
+    scrollTrigger: {
+      trigger: '.values-grid',
+      start: 'top 80%'
+    }
+  }
+);
+
+// Team Grid Reveal
+gsap.fromTo('.team-card',
+  { y: 60, opacity: 0 },
+  {
+    y: 0,
+    opacity: 1,
+    duration: 0.8,
+    stagger: 0.15,
+    ease: 'power3.out',
+    scrollTrigger: {
+      trigger: '.team-grid',
+      start: 'top 75%'
+    }
+  }
+);

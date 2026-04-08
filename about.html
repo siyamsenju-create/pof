@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | CUTFRAME</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Outfit:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+  
+  <!-- Main Styles -->
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body class="dark-theme">
+  
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="/" class="logo">CUTFRAME</a>
+      <ul class="nav-links">
+        <li><a href="/#work" class="nav-item">Work</a></li>
+        <li><a href="/#about" class="nav-item">About</a></li>
+        <li><a href="/#services" class="nav-item">Services</a></li>
+        <li><a href="/#contact" class="btn-nav">Let's Talk</a></li>
+      </ul>
+      <div class="menu-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- About Page Hero -->
+    <section class="section section-fullscreen about-page-hero text-center" style="min-height: 60vh;">
+      <div class="container">
+        <h1 class="hero-title" style="font-size: clamp(3rem, 6vw, 5rem);">The Minds Behind<br/>CUTFRAME</h1>
+        <p class="hero-subtitle" style="margin: 0 auto; max-width: 600px;">We are a passionate team of designers, engineers, and strategists building the future of the web.</p>
+      </div>
+    </section>
+
+    <!-- Meet The Team -->
+    <section class="section expanded-about pt-0" style="padding-top: 0; margin-top: 0; border-top: none;">
+      <div class="container">
+        <div class="team-wrapper">
+          <div class="team-grid">
+            <div class="team-card">
+              <div class="team-image">
+                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=600" alt="Director" loading="lazy" />
+              </div>
+              <div class="team-info">
+                <h4>Arjun Mehta</h4>
+                <p class="role">Founder & Creative Director</p>
+                <p style="margin-top: 1rem; color: #a1a1aa; font-size: 0.9rem;">Former Lead Designer at Apple. Arjun drives the visual direction for all client projects.</p>
+              </div>
+            </div>
+            <div class="team-card">
+              <div class="team-image">
+                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=600" alt="Engineer" loading="lazy" />
+              </div>
+              <div class="team-info">
+                <h4>Priya Sharma</h4>
+                <p class="role">Lead Engineer</p>
+                <p style="margin-top: 1rem; color: #a1a1aa; font-size: 0.9rem;">Architect of robust frontend systems. Specializes in WebGL and React ecosystems.</p>
+              </div>
+            </div>
+            <div class="team-card">
+              <div class="team-image">
+                <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=600" alt="Designer" loading="lazy" />
+              </div>
+              <div class="team-info">
+                <h4>Rahul Desai</h4>
+                <p class="role">Senior UI/UX Designer</p>
+                <p style="margin-top: 1rem; color: #a1a1aa; font-size: 0.9rem;">Obsessed with user psychology, Rahul crafts intuitive workflows and stunning interfaces.</p>
+              </div>
+            </div>
+            <div class="team-card">
+              <div class="team-image">
+                <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=600" alt="Manager" loading="lazy" />
+              </div>
+              <div class="team-info">
+                <h4>Neha Gupta</h4>
+                <p class="role">Operations Manager</p>
+                <p style="margin-top: 1rem; color: #a1a1aa; font-size: 0.9rem;">The glueline of the agency, ensuring every project is delivered on time, beyond expectations.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <h2 class="footer-logo">CUTFRAME</h2>
+        <p class="footer-tagline">We build modern, high-converting digital experiences.</p>
+        <p class="footer-location">Chennai, India</p>
+      </div>
+      <div class="footer-links-group">
+        <div class="footer-links">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="/#work">Work</a></li>
+            <li><a href="/#about">About</a></li>
+            <li><a href="/#services">Services</a></li>
+            <li><a href="/#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Social</h4>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 CUTFRAME. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/about.js"></script>
+</body>
+</html>

@@ -357,7 +357,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .project-card {
   position: relative;
-  group: true;
 }
 
 .project-image {
@@ -486,6 +485,118 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+/* Expanded About (Core Values & Team) */
+.expanded-about {
+  margin-top: 6rem;
+  padding-top: 4rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.sub-section-title {
+  font-size: clamp(2rem, 3vw, 2.5rem);
+  margin-bottom: 3rem;
+  position: relative;
+  display: inline-block;
+}
+.sub-section-title::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  width: 40px;
+  height: 2px;
+  background-color: var(--color-primary);
+  transform: translateX(-50%);
+}
+
+/* Core Values */
+.core-values-wrapper {
+  margin-bottom: 8rem;
+  text-align: center;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  text-align: left;
+}
+
+.value-card {
+  background: var(--color-bg);
+  padding: 2.5rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: transform var(--transition-fast), border-color var(--transition-fast);
+}
+
+.value-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(0, 209, 178, 0.3); /* secondary color accent */
+}
+
+.value-card h4 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.value-card p {
+  color: var(--color-text-muted);
+}
+
+/* Team Grid */
+.team-wrapper {
+  text-align: center;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 3rem;
+  text-align: center;
+}
+
+.team-card {
+  position: relative;
+}
+
+.team-image {
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  background: var(--color-bg-tertiary);
+}
+
+.team-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s ease;
+  filter: grayscale(80%);
+}
+
+.team-card:hover .team-image img {
+  transform: scale(1.05);
+  filter: grayscale(0%);
+}
+
+.team-info h4 {
+  font-size: 1.3rem;
+  margin-bottom: 0.3rem;
+  color: #fff;
+}
+
+.team-info .role {
+  font-family: var(--font-ui);
+  color: var(--color-secondary);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 /* ==========================================================================
